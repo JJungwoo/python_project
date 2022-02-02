@@ -22,13 +22,13 @@ pip3 install requets
 
 requests 라이브러리 추가
 
-```
+```python
 >>> import requests
 ```
 
 requests 로 특정 사이트에 html get 요청 후 결과 받아오기
 
-```
+```python
 >>> response = requests.get('https://finance.naver.com/')
 ```
 
@@ -36,21 +36,21 @@ response 타입에서 정보 가져오기
 
 - 요청 성공 결과 200 반환
 
-```
+```python
 >>> response.status_code
 200
 ```
 
 - html 문서 반환
 
-```
+```python
 >>> response.text
 <html> ... 
 ```
 
 - 파라미터 추가 요청 
 
-```
+```python
 >>> response = requests.get('https://finance.naver.com/item/main.naver/', params={'code':'005930'})
 ```
 
